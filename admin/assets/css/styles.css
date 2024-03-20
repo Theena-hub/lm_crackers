@@ -1,0 +1,146 @@
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+li{
+    list-style: none;
+}
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    height: auto;
+}
+
+@media (min-width:576px) {
+    .modal-content {
+        width: 350px;
+    }
+}
+
+@media (min-width:768px) {
+    .modal-content {
+        width: 350px;
+    }
+}
+
+@media (min-width:768px) {
+    #addProductModal .modal-content, #editProductModal .modal-content {
+        width: 600px;
+    }
+}
+
+.close {
+    /* position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 20px; */
+    cursor: pointer;
+}
+
+.fw-400 {
+    font-weight: 400;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.w-100 {
+    width: 100%;
+}
+.b-0{
+    border: none !important;
+}
+
+
+.cr{
+    cursor: not-allowed;
+}
+.cr-p{
+    cursor: pointer !important;
+}
+.flex{
+    display:  flex;
+}
+.wbig,
+.wbig input{
+    width: 250px !important;
+    text-align: left !important;
+    border: none;
+}
+.wnor,
+.wnor input{
+    width: 90px !important;
+    border: none;
+}
+table tr td{
+    height: 50px !important;
+    vertical-align: center !important;
+    text-align: center;
+    padding: 10px !important;
+}
+table tr th{
+    padding: 10px !important;
+    text-align: center;
+    font-weight: 600;
+}
+table tr td input{
+    text-align: center;
+}
+
+/* Search item section */
+.itli{
+    display: none;
+    width: 250px;
+    background-color: #fff;
+    color: #000;
+    overflow: auto;
+    height: 200px;
+    z-index: 9999;
+    list-style: none;
+    padding: 10px;
+    position: absolute;
+    border: 1px solid #000;
+    cursor: pointer !important;
+}
+.cform input,
+.cform select,
+.cform textarea{
+    width: 250px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.cform textarea{
+    height: 100px;
+}
